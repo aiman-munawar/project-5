@@ -1,0 +1,249 @@
+@font-face {
+    font-family:font ;
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    width: 100vw;
+    height: 100vh;
+}
+body #main{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    overflow: hidden;
+    position: relative;
+}
+#main #nav{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#nav #nav1{
+    width:10% ;
+    height: 100%;
+    background-color:black ;
+    margin-left: 8vw;
+}
+#nav1 h3{
+     font-family: font;
+     font-weight:700;
+     font-size: 2vw;
+     padding-top: 1vw;
+     padding-left: 2vw;
+     color: white;
+}
+#nav #nav2{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    margin-right: 6vw;
+    display: flex;
+    gap: 2vw;
+}
+#nav2 h4{
+    font-family: font;
+    font-size: 1vw;
+    padding-top: 1.8vw;
+    color: white;
+}
+#nav2 i{
+    display: none;
+}
+
+#main #left{
+    height: 56%;
+    width: 38%;
+    /* background-color: yellowgreen; */
+    background-color: black;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+#left h1{
+    font-family: font;
+    font-size: 4vw;
+    font-weight: 700;
+    color: white;
+    padding-left: 10vw;
+    padding-top: 5vw;
+    position: relative;
+}
+h1 span{
+    color: #019c65;
+}
+#left h2{
+    font-family: font;
+    font-size:1.2vw ;
+    padding-left:12vw ;
+    color: white;
+}
+#left #line{
+    width: 2%;
+    height: 0.7%;
+    background-color:#019c65;
+    position: absolute;
+    top:16.1vw ;
+    left: 10.8vw;  
+}
+#left h3{
+    font-family: font;
+    font-size:0.8vw ;
+    padding-left:9.9vw ;
+    line-height: 3vw;
+    color: white;
+    
+}
+#left button{
+    height: 2vw;
+    width: 7vw;
+    font-size: 0.7vw;
+    margin-left:10vw ;
+    background-color: #019c65;
+    color: white;
+    border: 0;
+}
+button i{
+    margin-right: .3vw;
+}
+#main #right{
+    height: 60%;
+    width:50% ;
+    /* background-color:#151515; */
+    position: absolute;
+    left: 41vw;
+    top: 4vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+#right img{
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    opacity: 0.4;
+
+}
+#main #bottom{
+    width: 100%;
+    height: 32%;
+    background-color: #151515;
+    position: relative;
+    top: 0;
+    border-top: 0.5vw solid ;
+}
+ #bottom #content{
+     width: 100%;
+     height:25% ;
+     background-color: #151515;
+     position: absolute;
+     top: 0;
+
+}
+#content h5{
+    font-family: font;
+    font-size: 0.9vw;
+    padding-left: 45vw;
+    color: white;
+}
+#content h1{
+    font-family: font;
+    padding-left: 43.5vw;
+    font-weight: 700;
+    color: white;
+    font-size: 1.8vw;
+    padding-top: 0.7vw;
+}
+
+#bottom #image{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 5vw;
+    margin-left: 20vw;
+    
+    
+}
+#image img{
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+#bottom #text{
+    width:30% ;
+    height :100% ;
+    margin-left:42vw;
+    background-color: #151515;
+    position: absolute;
+    top: 5vw;
+    margin-left: 45vw;
+}
+#text h2{
+    font-family: font;
+    font-size: 1.1vw;
+    color: white;
+}
+#text h3{
+    font-family: font;
+    font-size:1.5 ;
+    padding-top: 0.5vw;
+    color: white;
+}
+#text p{
+    font-family: font;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    padding: 0.8vw 0;
+    color: white;
+    opacity: 0.5;
+}
+@media (max-width:412px) {
+    #main #nav{
+        height: 8%;
+
+    }
+    #nav #nav1{
+        width:15% ;
+    }
+    #nav1 h3{
+        font-size: 5vw;
+   }
+   
+#nav2 h4{
+    display: none;
+}
+#nav2 i{
+    padding-left: 40vw;
+    padding-top: 2vw;
+    color: white;
+    font-weight: 600;
+    font-size: 3.7vw;
+    display: initial;
+}
+#main #left{
+    height: 56%;
+    width: 38%;
+    position: absolute;
+    /* background-color: yellowgreen; */
+    background-color: black;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+#main #right{
+    height: 60%;
+    width:100% ;
+    /* background-color:#151515; */
+    position: absolute;
+    left: 41vw;
+    top: 4vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
